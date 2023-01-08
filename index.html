@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Hand gesture app</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+<body>
+    <center>
+    <h1 class=" btn btn-info btn-lg">GESTURE WEB APP</h1>
+    <BR>
+        <BR>
+            <h2>TAKE A SELFIE OF A GESTURE TO KNOW ABOUT ITS MEANING </h2>
+            <H3>On the followinggestures the model is trained</H3>
+            <h1>&#128076; 	&#128077;  &#128074;</h1>
+
+        </center>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 div_1">
+        <h2 class="btn btn-info">Webcam View - </h2>
+        <div id="camera"></div>
+        <button class="btn btn-warning" onclick="take_snapshot()">Capture Image</button>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 div_1">
+    <button class="btn btn-default"> PREDICTION </button>
+    <h1 id="emoji_name"></h1>
+    <br>
+    <h1 id="emoji"></h1>
+</div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 div_1">
+        <h2 class="btn btn-info">Captured Image - </h2>
+        <div id="output"></div>
+        <button class="btn btn-warning">Predict Gesture</button>
+    </div>
+    <script src='main.js'></script>
+</body>
+</html>
